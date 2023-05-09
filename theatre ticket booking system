@@ -1,0 +1,28 @@
+name=input("enter your name")
+total_seat=100
+normal_seat=80
+recliner_seat=20
+n_rate=500
+r_rate=600
+pop=100
+seats=input("enter normal or recliner seats")
+if seats=='normal':
+    nos=int(input("enter number of seats"))
+    if nos>80:
+        print("only 80 seats are available")
+        exit()
+    else:
+        total=nos*n_rate
+else:
+    nos=int(input("enter number of seats"))
+    if nos>20:
+        print("only 20 seats are available")
+        exit()
+    else:
+        total=nos*r_rate
+
+pop1=input("need of popcorn yes/no")
+nop=int(input("enter no of popcorn"))
+if pop1=='yes':
+            total=total+pop*nop
+print('your total amount is =',total)        
